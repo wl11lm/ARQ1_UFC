@@ -1,2 +1,6 @@
 # ArquiteturaEOrganizacao
-Atividades de Arquitetura e Organização de Computadores - Pablo Vini - William Marreiro
+Atividades de Arquitetura e Organização de Computadores 
+
+Dupla:
+- Pablo Vini
+- William Marreiro

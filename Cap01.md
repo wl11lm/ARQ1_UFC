@@ -107,10 +107,9 @@ instructions to implement each of the following C statements or segments:
         MOV b, eax
         MOV a, eax
 
-- D. x = y = 1;***
+- D. x = y = 1;
 
-        MOV eax, y
-        MOV x, eax
+        MOV x, 1
         MOV y, 1
 
 - E. a = 1;
@@ -132,37 +131,37 @@ instructions to implement each of the following C statements or segments:
 <br>
 5. Assuming all the variables are declared as byte, write assembly language
 instructions to implement each of the following C statements or segments:
-- A. a = 'B';
+    - A. a = 'B';
 
-        MOV a, 'B'
+            MOV a, 'B'
 
-- B. b = c;
+    - B. b = c;
 
-        MOV al, c
-        MOV b, al
+            MOV al, c
+            MOV b, al
 
-- C. d = 'E';
-    e = d;
+    - C. d = 'E';
+        e = d;
 
-        MOV d, 'E'
-        MOV al, d
-        MOV e, al
+            MOV d, 'E'
+            MOV al, d
+            MOV e, al
 
-- D. d = 'z';
-    a = d;
-    b = a;
+    - D. d = 'z';
+        a = d;
+        b = a;
 
-        MOV d, 'Z'
-        MOV al, d
-        MOV a, al
-        MOV b, al
+            MOV d, 'Z'
+            MOV al, d
+            MOV a, al
+            MOV b, al
 
-- E. a = '2';
-    b = '?';
-    a = b;
+    - E. a = '2';
+        b = '?';
+        a = b;
 
-        MOV a, '2'
-        MOV b, '?'
-        MOV al, b
-        MOV a, al
+            MOV a, '2'
+            MOV b, '?'
+            MOV al, b
+            MOV a, al
 

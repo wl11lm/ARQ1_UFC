@@ -1,56 +1,55 @@
 # Cap 01
-### Questão 1
 
 1. Which of the following are syntactically correct variable names in assembly
 language?
 
-    - A. RX8   
+- A. RX8   
 
-            CORRETA
-    - B. 325i       
-    
-            INCORRETA, não pode iniciar com número
-    - C. Total$     
-    
-            CORRETA
-    - D. @1234      
-    
-            INCORRETA, deve-se começar por letra
-    - E. $1000      
-    
-            INCORRETA, deve-se começar por letra
-    - F. Pi3.14     
-    
-            INCORRETA, não pode haver ponto decimal.
+        CORRETA
+- B. 325i       
+
+        INCORRETA, não pode iniciar com número
+- C. Total$     
+
+        CORRETA
+- D. @1234      
+
+        INCORRETA, deve-se começar por letra
+- E. $1000      
+
+        INCORRETA, deve-se começar por letra
+- F. Pi3.14     
+
+        INCORRETA, não pode haver ponto decimal.
 
 ----- 
 <br>
 
 2. Implement each of the following declarations in assembly language:
-    - A. char initial;
-            
-            initial byte ?
+- A. char initial;
+        
+        initial byte ?
+
+- B. char grade = 'B';
+        
+        grade byte 'B'
+
+- C. char x = 'P', y = 'Q';
     
-    - B. char grade = 'B';
-            
-            grade byte 'B'
+        x byte 'P'
+        y byte 'Q'
 
-    - C. char x = 'P', y = 'Q';
-        
-            x byte 'P'
-            y byte 'Q'
+- D. int amount;
+    
+        amount sdword ?
 
-    - D. int amount;
-        
-            amount sdword ?
+- E. int count = 0;
+    
+        count sdword 0
 
-    - E. int count = 0;
-        
-            count sdword 0
-
-    - F. int number = -396;
-        
-            number sdword -396
+- F. int number = -396;
+    
+        number sdword -396
 
 ----- 
 <br>
@@ -59,30 +58,30 @@ language?
 following statements are syntactically correct or incorrect. If incorrect, indicate
 what is wrong with the statement:
 
-    - A. move cat,5 
+- A. move cat,5 
+    
+        INCORRETA, se escreve MOV
+- B. mov dog,cat 
+    
+        INCORRETA, está acessando dois espaços de memoria simultaneamente
+- C. mov eax,ebx
+    
+        CORRETA
+- D. mov mouse,-7 
+    
+        CORRETA
+- E. mov 1,frog 
+    
+        INCORRETA, não é possível mover um espaço de memória para um valor imediato
+- F. mov horse,ecx
+    
+        CORRETO
+- G. mov rat,-eax 
         
-            INCORRETA, se escreve MOV
-    - B. mov dog,cat 
+        INCORRETO, só pode haver sinais em valores imediatos
+- H. mov edx,2
         
-            INCORRETA, está acessando dois espaços de memoria simultaneamente
-    - C. mov eax,ebx
-        
-            CORRETA
-    - D. mov mouse,-7 
-        
-            CORRETA
-    - E. mov 1,frog 
-        
-            INCORRETA, não é possível mover um espaço de memória para um valor imediato
-    - F. mov horse,ecx
-        
-            CORRETO
-    - G. mov rat,-eax 
-            
-            INCORRETO, só pode haver sinais em valores imediatos
-    - H. mov edx,2
-            
-            CORRETO
+        CORRETO
 
 ----- 
 <br>
@@ -131,37 +130,38 @@ instructions to implement each of the following C statements or segments:
 <br>
 5. Assuming all the variables are declared as byte, write assembly language
 instructions to implement each of the following C statements or segments:
-    - A. a = 'B';
 
-            MOV a, 'B'
+- A. a = 'B';
 
-    - B. b = c;
+        MOV a, 'B'
 
-            MOV al, c
-            MOV b, al
+- B. b = c;
 
-    - C. d = 'E';
-        e = d;
+        MOV al, c
+        MOV b, al
 
-            MOV d, 'E'
-            MOV al, d
-            MOV e, al
+- C. d = 'E';
+    e = d;
 
-    - D. d = 'z';
-        a = d;
-        b = a;
+        MOV d, 'E'
+        MOV al, d
+        MOV e, al
 
-            MOV d, 'Z'
-            MOV al, d
-            MOV a, al
-            MOV b, al
+- D. d = 'z';
+    a = d;
+    b = a;
 
-    - E. a = '2';
-        b = '?';
-        a = b;
+        MOV d, 'Z'
+        MOV al, d
+        MOV a, al
+        MOV b, al
 
-            MOV a, '2'
-            MOV b, '?'
-            MOV al, b
-            MOV a, al
+- E. a = '2';
+    b = '?';
+    a = b;
+
+        MOV a, '2'
+        MOV b, '?'
+        MOV al, b
+        MOV a, al
 

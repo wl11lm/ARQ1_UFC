@@ -14,11 +14,11 @@ C - INCORRETA, POIS O USO DA DIRETIVA "ADDR", NESSE CASO, ESTÁ IMPRIMINDO O END
 D - CORRETA
 
 
-E - INCORRETA, POIS EM ASSEMBLY UTILIZAMOS "0Ah" AO INVÉS DE "\N"
+E - INCORRETA, POIS EM ASSEMBLY UTILIZAMOS "0Ah" AO INVÉS DE "\n"
 
 
 ------
-### QUESTÃO 02:
+### QUESTÃO 02*:
 
 O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA NA LIMPA DOS VALORES DOS REGISTRADORES EAX, ECX E EDX. NESSE CÓDIGO, ISSO IMPLICARIA EM UM ERRO DE LÓGICA.
 
@@ -81,9 +81,7 @@ O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA N
         msg1fmt byte 0Ah,"%s",0
         msg2fmt byte 0Ah, "%s", 0Ah, 0Ah, 0
         msg3fmt byte " %d      %d", 0Ah, 0Ah, 0
-
         in1fmt byte "%d",0
-
         msg1 byte "Enter a value for num1: ",0
         msg2 byte "Enter a value for num2: ",0
         msg3 byte "num1    num2",0
@@ -97,8 +95,6 @@ O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA N
         INVOKE scanf,ADDR in1fmt, ADDR num2
         INVOKE printf,ADDR msg2fmt, ADDR msg3
         INVOKE printf,ADDR msg3fmt, num1, num2
-
-
         ret
         main endp
         end        
@@ -118,37 +114,27 @@ O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA N
         infmt  byte    "%d", 0
         msg0fmt byte    "%s",0
         msg1fmt byte    0Ah, "%s",0
-
-
         msg2fmt byte    0Ah,"%d%s%d%s%d",0Ah,0
-
         msg0    byte    "Enter a number: ",0
         msg1    byte    "Enter a larger number: ",0
         msg2    byte    "Enter an even larger",0
         msg3    byte    "number: ", 0
-
         msg4    byte    " < ", 0
         msg5    byte    " > ", 0
-
         num1    sdword  ?   ; first number
         num2    sdword  ?   ; second number
         num3    sdword  ?   ; third number
-
             .code
         main    proc
                 INVOKE printf, ADDR msg1fmt, ADDR msg0
                 INVOKE scanf, ADDR infmt, ADDR num1
-
                 INVOKE printf, ADDR msg0fmt, ADDR msg1
                 INVOKE scanf, ADDR infmt, ADDR num2
-
                 INVOKE printf, ADDR msg0fmt, ADDR msg2
                 INVOKE printf, ADDR msg1fmt, ADDR msg3
                 INVOKE scanf, ADDR infmt, ADDR num3
-
                 INVOKE printf, ADDR msg2fmt, num1, ADDR msg4, num2, ADDR msg4, num3, ADDR msg4
                 INVOKE printf, ADDR msg2fmt, num3, ADDR msg5, num2, ADDR msg5, num1, ADDR msg5
-
                 ret 
         main    endp
         end
@@ -167,12 +153,9 @@ O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA N
     msg1fmt byte "%s",0
     msg2fmt byte 0Ah,"%s",0
     msg3fmt byte 0Ah,"    %d",0
-
     in1fmt byte "%d",0
-
     msg1 byte "Enter a number: ",0
     msg3 byte "Numbers",0
-
     num1 sdword ?
     num2 sdword ?
       .code
@@ -184,8 +167,6 @@ O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA N
     INVOKE printf,ADDR msg2fmt, ADDR msg3
     INVOKE printf,ADDR msg3fmt, num1
     INVOKE printf,ADDR msg3fmt, num2
-
-
     ret
     main endp
     end 

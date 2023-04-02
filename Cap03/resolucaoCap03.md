@@ -1,6 +1,6 @@
 QUESTIONÁRIO 03
 
-QUESTÃO 01:
+### QUESTÃO 01:
 
         A - INCORRETA, POIS O COMANDO "inc" É UNÁRIO, OU SEJA, SÓ NECESSITA DE UMA VARÍAVEL PARA  INCREMENTAR
         B - CORRETA
@@ -9,7 +9,9 @@ QUESTÃO 01:
         E - INCORRETA, POIS É IMPOSSÍVEL SUBTRAIR DE UM VALOR IMEDIATO
         F - CORRETA
 
- QUESTÃO 02:       
+
+------
+ ### QUESTÃO 02:       
 
 A:
 
@@ -37,7 +39,9 @@ D:
         sub eax,number
         mov difference,eax
 
-QUESTÃO 03:
+
+------
+### QUESTÃO 03:
 
 A:      
         mov eax, x
@@ -97,7 +101,9 @@ F:
         add eax,a
         mov q,eax
 
-QUESTÃO 04:
+
+-------
+### QUESTÃO 04:
 
 A:
 
@@ -133,7 +139,9 @@ E:
         dec z
         mov x,eax
 
-QUESTÃO 05:
+
+-------
+### QUESTÃO 05:
 
             .686
             .model flat, c
@@ -161,7 +169,9 @@ QUESTÃO 05:
     ret
     main endp
 
-QUESTÃO 06:
+
+-------
+### QUESTÃO 06:
 
             .686
             .model flat, c
@@ -196,7 +206,9 @@ QUESTÃO 06:
         main endp 
         end
 
-QUESTÃO 07:
+
+-------
+### QUESTÃO 07:
 
             .686
             .model flat, c

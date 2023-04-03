@@ -44,6 +44,7 @@ D:
 ### QUESTÃO 03:
 
 A:      
+
         mov eax, x
         imul y
         mov ecx,eax

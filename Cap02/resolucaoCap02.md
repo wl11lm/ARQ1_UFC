@@ -48,125 +48,20 @@ O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA N
 
 --------
 ### QUESTÃO 05:
-        
-
-            .686
-            .model flat, c
-            .stack 100h
-        printf PROTO arg1:Ptr Byte, printlist:VARARG
-            .data
-        msg1fmt byte 0Ah,"%d%s%d%s%d",0Ah,0Ah,0
-        msg1 byte " + " , 0
-        msg2 byte " = " , 0
-        x sdword 1
-        y sdword 2
-        z sdword 3
-            .code
-        main proc
-        INVOKE printf,ADDR msg1fmt, x, ADDR msg1, y , ADDR msg2, z
-        ret
-        main endp
-        end
+Arquivo questao05.asm
 
 
 --------
 ### QUESTÃO 06:
-
-            .686
-            .model flat, c
-            .stack 100h
-        printf PROTO arg1:Ptr Byte, printlist:VARARG
-        scanf PROTO arg2: Ptr Byte, inputlist:VARARG
-            .data
-        msg1fmt byte 0Ah,"%s",0
-        msg2fmt byte 0Ah, "%s", 0Ah, 0Ah, 0
-        msg3fmt byte " %d      %d", 0Ah, 0Ah, 0
-        in1fmt byte "%d",0
-        msg1 byte "Enter a value for num1: ",0
-        msg2 byte "Enter a value for num2: ",0
-        msg3 byte "num1    num2",0
-        num1 sdword ?
-        num2 sdword ?
-            .code
-        main proc
-        INVOKE printf,ADDR msg1fmt, ADDR msg1
-        INVOKE scanf,ADDR in1fmt, ADDR num1
-        INVOKE printf,ADDR msg1fmt, ADDR msg2
-        INVOKE scanf,ADDR in1fmt, ADDR num2
-        INVOKE printf,ADDR msg2fmt, ADDR msg3
-        INVOKE printf,ADDR msg3fmt, num1, num2
-        ret
-        main endp
-        end        
+Arquivo questao06.asm
 
 
 
 ---------
 ### QUESTÃO 07:
-
-
-            .686
-            .model  flat, c 
-            .stack  100h
-        printf  PROTO arg1:Ptr Byte, printlist:VARARG 
-        scanf   PROTO arg2:Ptr Byte, inputlist:VARARG
-            .data
-        infmt  byte    "%d", 0
-        msg0fmt byte    "%s",0
-        msg1fmt byte    0Ah, "%s",0
-        msg2fmt byte    0Ah,"%d%s%d%s%d",0Ah,0
-        msg0    byte    "Enter a number: ",0
-        msg1    byte    "Enter a larger number: ",0
-        msg2    byte    "Enter an even larger",0
-        msg3    byte    "number: ", 0
-        msg4    byte    " < ", 0
-        msg5    byte    " > ", 0
-        num1    sdword  ?   ; first number
-        num2    sdword  ?   ; second number
-        num3    sdword  ?   ; third number
-            .code
-        main    proc
-                INVOKE printf, ADDR msg1fmt, ADDR msg0
-                INVOKE scanf, ADDR infmt, ADDR num1
-                INVOKE printf, ADDR msg0fmt, ADDR msg1
-                INVOKE scanf, ADDR infmt, ADDR num2
-                INVOKE printf, ADDR msg0fmt, ADDR msg2
-                INVOKE printf, ADDR msg1fmt, ADDR msg3
-                INVOKE scanf, ADDR infmt, ADDR num3
-                INVOKE printf, ADDR msg2fmt, num1, ADDR msg4, num2, ADDR msg4, num3, ADDR msg4
-                INVOKE printf, ADDR msg2fmt, num3, ADDR msg5, num2, ADDR msg5, num1, ADDR msg5
-                ret 
-        main    endp
-        end
+Arquivo questao07.asm
 
 
 ---------
 ### QUESTÃO 08:
-
-
-        .686
-        .model flat, c
-        .stack 100h
-    printf PROTO arg1:Ptr Byte, printlist:VARARG
-    scanf PROTO arg2: Ptr Byte, inputlist:VARARG
-        .data
-    msg1fmt byte "%s",0
-    msg2fmt byte 0Ah,"%s",0
-    msg3fmt byte 0Ah,"    %d",0
-    in1fmt byte "%d",0
-    msg1 byte "Enter a number: ",0
-    msg3 byte "Numbers",0
-    num1 sdword ?
-    num2 sdword ?
-      .code
-    main proc
-    INVOKE printf,ADDR msg1fmt, ADDR msg1
-    INVOKE scanf,ADDR in1fmt, ADDR num1
-    INVOKE printf,ADDR msg1fmt, ADDR msg1
-    INVOKE scanf,ADDR in1fmt, ADDR num2
-    INVOKE printf,ADDR msg2fmt, ADDR msg3
-    INVOKE printf,ADDR msg3fmt, num1
-    INVOKE printf,ADDR msg3fmt, num2
-    ret
-    main endp
-    end 
+Arquivo questao08.asm

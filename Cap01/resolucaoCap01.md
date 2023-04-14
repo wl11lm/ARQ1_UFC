@@ -101,8 +101,8 @@ instructions to implement each of the following C statements or segments:
      b = c;
      a = b;
 
-        MOV c, 2
-        MOV eax, c
+        MOV c_, 2
+        MOV eax, c_
         MOV b, eax
         MOV a, eax
 
@@ -120,10 +120,10 @@ instructions to implement each of the following C statements or segments:
         MOV a, 1
         MOV b, 2
         MOV eax, a
-        MOV c, eax
+        MOV c_, eax
         MOV eax, b
         MOV a, eax
-        MOV eax, c
+        MOV eax, c_
         MOV b, eax
 
 ----- 
@@ -137,7 +137,7 @@ instructions to implement each of the following C statements or segments:
 
 - B. b = c;
 
-        MOV al, c
+        MOV al, c_
         MOV b, al
 
 - C. d = 'E';

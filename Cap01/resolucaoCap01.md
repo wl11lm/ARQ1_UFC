@@ -14,10 +14,10 @@ language?
         CORRETA
 - D. @1234      
 
-        INCORRETA, deve-se começar por letra
+        CORRETA*, porém é recomendado começar por letra
 - E. $1000      
 
-        INCORRETA, deve-se começar por letra
+        CORRETA*, porém é recomendado começar por letra
 - F. Pi3.14     
 
         INCORRETA, não pode haver ponto decimal.

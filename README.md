@@ -1,4 +1,4 @@
-# Arquitetura e Organização de Computadores
+# 🖥️ Arquitetura e Organização de Computadores
 ## Repositório de Atividades
 ### Membros:
 

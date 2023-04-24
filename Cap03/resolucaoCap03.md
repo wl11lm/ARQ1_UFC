@@ -1,6 +1,10 @@
 ## QUESTIONÁRIO 03
 
+> Correção: 2,0
+
 ### QUESTÃO 01:
+
+> Correção: 0,5
 
         A - INCORRETA, POIS O COMANDO "inc" É UNÁRIO, OU SEJA, SÓ NECESSITA DE UMA VARÍAVEL PARA  INCREMENTAR
         B - CORRETA
@@ -12,6 +16,8 @@
 
 ------
  ### QUESTÃO 02:       
+
+> Correção: 0,5
 
 A:
 
@@ -42,6 +48,8 @@ D:
 
 ------
 ### QUESTÃO 03:
+
+> Correção: 0,5
 
 A:      
 
@@ -105,6 +113,8 @@ F:
 
 -------
 ### QUESTÃO 04:
+
+> Correção: 0,5
 
 A:
 

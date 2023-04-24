@@ -1,6 +1,11 @@
 Questonário - CAPÍTULO 02
+
+> Correção: 2,0
+
 ------
 ### QUESTÃO 01:
+
+> Correção: 0,5
 
 A - CORRETA
 
@@ -20,6 +25,8 @@ E - INCORRETA, POIS EM ASSEMBLY UTILIZAMOS "0Ah" AO INVÉS DE "\n"
 ------
 ### QUESTÃO 02*:
 
+> Correção: 0,5
+
 O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA NA LIMPA DOS VALORES DOS REGISTRADORES EAX, ECX E EDX. NESSE CÓDIGO, ISSO IMPLICARIA EM UM ERRO DE LÓGICA.
 
         mov num1,5
@@ -31,6 +38,8 @@ O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA N
 ------
 ### QUESTÃO 03:
 
+> Correção: 0,5
+
         x = 1 y = 2
         BLANK LINE
         BLANK LINE
@@ -39,6 +48,8 @@ O CÓDIGO A SEGUIR UTILIZA O USO DA DIRETIVA INVOKE, PORÉM O USO DELA IMPLICA N
 
 --------
 ### QUESTÃO 04:
+
+> Correção: 0,5
 
         BLANK LINE
         The first number is 5, but the second number is 7,

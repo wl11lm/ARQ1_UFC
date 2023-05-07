@@ -6,7 +6,7 @@
 
         B) INCORRETA, NÃO HÁ O "then" APÓS A CONDIÇÃO.
 
-        C) INCORRETO, x-1
+        C) EMBORA ESTEJA SINTATICAMENTE CORRETO, PODE NÃO SER O QUE SE PRETENDA LOGICAMENTE.
 
         D) INCORRETO, HÁ DOIS ACESSOS SIMULTÂNEOS NA MEMÓRIA.
 
@@ -16,7 +16,7 @@
 ```asm
     mov eax, a
     .if eax > b
-        dec eax
+        sub eax, 1
         mov a, eax
     .else
         mov eax, b
@@ -89,8 +89,63 @@ then01:     dec e
 endif01:    nop
 ```
 -----
-### QUESTAO 4 ??
+### QUESTAO 4
+### Alternativa a):
 
+```asm
+    mov eax, a
+    .if eax <= b
+        mov eax, c_
+        .if b < eax 
+            .if eax <= d
+                mov ebx, 2
+                mov eax, d
+                cdq
+                idiv ebx
+                mov d, eax
+            .else 
+                add eax, d
+                mov c_, eax
+            .endif
+        .else
+            sub b, 2
+        .endif
+    .else
+        sub eax, 1
+        mov a, eax
+    .endif
+```
+
+### Alternativa b):
+
+```asm
+    if01:   mov eax, a
+            cmp eax, b
+            jg else01
+    then01: nop
+    if02:   mov eax, c_
+            cmp b, eax
+            jge else02
+    then02: nop
+    if03:   cmp eax, d
+            jg else03
+    then03: mov ebx, 2
+            mov eax, d
+            cdq
+            idiv ebx
+            mov d, eax
+            jmp endif03
+    else03: add eax, d
+            mov c_, eax
+    endif03:nop
+            jmp endif02
+    else02: sub b, 2
+    endif02:nop
+            jmp endif01
+    else01: sub eax, 1
+            mov a, eax
+    endif01:nop
+```
 ----
 
 ### QUESTÃO 05

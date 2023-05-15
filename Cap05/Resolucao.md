@@ -2,7 +2,7 @@
 
         a) Incorreto pois não existe o (.for) e (.endfor) no MASM
 
-        b) Incorreto, falta o . da diretiva .while e no mesmo while está ocorrendo dois acessos à memória similtaneamente.
+        b) Incorreto, falta o . da diretiva .while e no mesmo while está ocorrendo dois acessos à memória simultaneamente.
 
         c) Correto
 

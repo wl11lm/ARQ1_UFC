@@ -26,10 +26,7 @@ endw01:     nop
 
         a) O loop ocorrerá 3 vezes
 
-        b) O trecho de código não irá se repetir, será execultado apenas a primeira vez
+        b) O trecho de código não irá se repetir, será executado apenas a primeira vez
 
         c) O trecho não será executado nenhuma vez.
 
------
-### Questão 04
-???????????????

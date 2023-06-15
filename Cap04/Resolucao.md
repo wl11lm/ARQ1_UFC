@@ -1,6 +1,10 @@
 ## QUESTIONÁRIO 04
 
+> Correção: 1,5.
+
 ### QUESTÃO 01
+
+> Correção: 0,3
 
         A) INCORRETA, POIS HÁ A AUSENCIA DE MAIS UM '=' NA COMPARAÇÃO.
 
@@ -12,6 +16,8 @@
 
 -----
 ### QUESTÃO 02
+
+> Correção: 0,3
 
 ```asm
     mov eax, a
@@ -41,6 +47,9 @@
 ```
 -----
 ### QUESTÃO 03
+
+> Correção: 0,3
+
 A)
 ```asm
 if01:       cmp w,1
@@ -90,6 +99,9 @@ endif01:    nop
 ```
 -----
 ### QUESTAO 4
+
+> Correção: 0,3
+
 ### Alternativa a):
 
 ```asm
@@ -149,6 +161,8 @@ endif01:    nop
 ----
 
 ### QUESTÃO 05
+
+> Correção: 0,3
 
 ```asm
 mov eax, number

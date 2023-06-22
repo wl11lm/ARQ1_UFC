@@ -5,7 +5,7 @@ printf PROTO arg1:Ptr Byte, printlist:VARARG
     .data
 msg1fmt byte 0Ah,"%d",0
 msg1 byte "funfou",0
-numero sdword 3
+numero sdword 5
 resultado sdword ?
     .code
 main proc

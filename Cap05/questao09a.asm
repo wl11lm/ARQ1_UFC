@@ -1,3 +1,4 @@
+ ; Correção: 0,8. Nós já aprendemos o scanf. Próxima vez, use ele, não peça para mudar manualmente. 
     .686
     .model flat, c
     .stack 100h
@@ -5,7 +6,7 @@ printf PROTO arg1:Ptr Byte, printlist:VARARG
     .data
 msg1fmt byte 0Ah,"%d",0
 msg1 byte "funfou",0
-numero sdword 4
+numero sdword 5
 resultado sdword ?
     .code
 main proc

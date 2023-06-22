@@ -2,6 +2,7 @@
     .model flat, c
     .stack 100h
 printf PROTO arg1:Ptr Byte, printlist:VARARG
+; Correção: 1,0
     .data
 msg1fmt byte 0Ah,"%d",0
 msg1 byte "funfou",0
@@ -10,7 +11,7 @@ resultado sdword ?
 main proc
 
         ; Mude manualmente o ecx pra determinar o valor
-        mov ecx, 4
+        mov ecx, 7
 
         mov ebx, 0
         mov edx, 1

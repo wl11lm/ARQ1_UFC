@@ -1,6 +1,6 @@
 # 🖥️ Arquitetura e Organização de Computadores
 ## Repositório de Atividades
-### Membros:
+### 👥 Membros:
 
 - Pablo Vinicios <br>
 <a href="http://t.me/PabloVini2811" target="_blank"><img src="https://img.shields.io/badge/-TELEGRAM-blue??style=flat&logo=telegram" target="_blank"></a>

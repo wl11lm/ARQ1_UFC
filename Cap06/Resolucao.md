@@ -1,5 +1,8 @@
 ## QUESTIONÁRIO 06
 
+> Correção: 0,4. Na letra G), não existe o registrador _exc_.
+
+
 ### QUESTÃO 01
 
         A) CORRETO
@@ -24,6 +27,9 @@
 -----
 
 ### QUESTÃO 02
+
+> Correção: 0,5
+
 A)
 ```asm
 mov ebx, total
@@ -63,6 +69,8 @@ mov a, eax
 ```
 -----
 ### QUESTÃO 03
+
+> Correção: 0,5
 
 ```asm
 push eax

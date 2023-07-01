@@ -1,3 +1,4 @@
+; Correção: 0,1
     .686
     .model flat, c
     .stack 100h
@@ -5,7 +6,7 @@ printf PROTO arg1:Ptr Byte, printlist:VARARG
     .data
 msg1fmt byte 0Ah,"%d",0
 msg1 byte "funfou",0
-numero sdword 6         ; Mude manualmente o numero pra determinar o valor
+numero sdword 7         ; Mude manualmente o numero pra determinar o valor
 resultado sdword ?
     .code
 main proc

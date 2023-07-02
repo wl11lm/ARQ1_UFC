@@ -12,7 +12,7 @@
         E - CORRETO
 
         F - INCORRETO, HA DOIS ACESSOS DE MEMÓRIA
-
+----
 ### QUESTÃO 02 -
 
         A - 5
@@ -30,7 +30,7 @@
         G - 12
 
         H - 14
-
+----
 ### QUESTÃO 03 -
 
         A - mov num+0,1
@@ -43,7 +43,7 @@
 
         D - mov eax, [edi] 
             mov [esi], eax
-
+----
 ### QUESTÃO 04 -
 
         A - 5
@@ -59,6 +59,6 @@
         F - 6
 
 ### 📎 QUESTÃO 05 - Em arquivos
-
+----
 
 ### 📎 QUESTÃO 06 - Em arquivos 

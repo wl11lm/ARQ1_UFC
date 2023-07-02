@@ -58,7 +58,7 @@
 
         F - 6
 
-### QUESTÃO 05 - Em arquivos
+### 📎 QUESTÃO 05 - Em arquivos
 
 
-### QUESTÃO 06 ?
+### 📎 QUESTÃO 06 - Em arquivos 

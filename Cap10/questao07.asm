@@ -7,7 +7,7 @@ scanf PROTO arg2: Ptr Byte, inputlist:VARARG
 msg1fmt byte 0Ah,"%s",0
 msg1 byte "x is greater than y", 0
 msg2 byte "x is less than y", 0
-msg3 byte "x is equal than y", 0
+msg3 byte "x and y are equal", 0
 
 x real10 6.0
 y real10 5.0

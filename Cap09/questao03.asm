@@ -1,3 +1,4 @@
+; Correção: 1,0 
     .686
     .model flat, c
     .stack 100h
@@ -8,7 +9,7 @@ msg1fmt byte "%s",0Ah, 0
 in1fmt byte "%s", 0
 msg1 byte "Eh palindromo", 0
 msg2 byte "Nao eh palindromo", 0
-vetor byte "abcdeedcba radarradar engenheiro livrolivro computador levellevel sopossopos natannatan amigoamigo abacaxista"
+vetor byte "abcdeedcba radarradar engenheiro abcdeedcba computador levellevel sopossopos natannatan amigoamigo abacaxista"
 tamanho sdword  10
 achou sdword  0
 aux1 sdword  0

@@ -1,4 +1,7 @@
 ### Questão 01 -
+
+> Correção: 0,3. Existe a instrução _stosb_.
+
         a) INCORRETA, O CORRETO É "movsb"
         b) CORRETA
         c) CORRETA
@@ -8,6 +11,9 @@
 
 -----
 ### Questão 02 -
+
+> Correção: 0,3. Na letra C, _ecx_ fica em 1.
+
 | Alternativa   |  ecx      | esi       | edi       |    al     |
 | ---           |  ---      | ---       | ---       |    ---    |
 | a)            |  2        |indefinido | 103       |   "c"     |
